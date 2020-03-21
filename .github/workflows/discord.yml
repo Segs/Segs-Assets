@@ -23,9 +23,9 @@ jobs:
         # Severity level - info, warn, or error
         severity: info # optional, default is error
         # Embed notification message. Use context expressions and environment variables to provide information. Default provides branch and user info.
-        description: ${{ github.actor.login }} ${{ github.event_name }} # optional
+        description: ${{ github.actor }} ${{ github.event_name }} # optional
         # Additional text after the notification message in case you want to retain the default message.
-        details: ${{ action }} pull request \#${{pr.number}} (${{pr.title}}) # optional
+        details: ${{ github.event_name }} pull request \#${{PR.number}} (${{PR.title}}) # optional
         # Footer for the embed. Defaults to severity.
         footer: ${{ github.repository }} # optional
         # Text to be sent as normal text above the embed. Use context expressions and environment variables to provide information.
