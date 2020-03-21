@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Discord notification
+    - name: Discord Notification
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        DISCORD_USERNAME: 'Police Bot'
+        DISCORD_USERNAME: Police Bot
         DISCORD_AVATAR: https://paragonwiki.com/w/images//c/ca/PPD_Drone.jpg
       uses: Ilshidur/action-discord@master
       with:
