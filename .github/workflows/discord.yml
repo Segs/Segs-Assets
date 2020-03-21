@@ -1,0 +1,22 @@
+# Actions for Discord
+- name: Discord Message Notify
+  uses: appleboy/discord-action@0.0.3
+  with:
+    # discord webhook id
+    webhook_id: ${{ secrets.WEBHOOK_ID }}
+    # discord webhook token
+    webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+    # the message contents (up to 2000 characters)
+    message: # optional
+    # the contents of the file being sent
+    file: # optional
+    # color code of the embed
+    color: # optional
+    # waits for server confirmation of message send before response, and returns the created message body
+    wait: # optional
+    # true if this is a TTS message
+    tts: # optional
+    # override the default username of the webhook
+    username: "Police Bot" # optional
+    # override the default avatar of the webhook
+    avatar_url: "https://paragonwiki.com/w/images//c/ca/PPD_Drone.jpg" # optional
